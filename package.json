@@ -1,0 +1,14 @@
+{
+  "author": "Scott Becker",
+  "name": "node_rest_api_boilerplate",
+  "description": "This is an example Node.js application that demonstrates a full REST API",
+  "version": "0.0.1",
+  "dependencies": {
+    "coffee-script": "latest",
+    "express": "latest",
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
