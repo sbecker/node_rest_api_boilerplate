@@ -6,6 +6,7 @@
   "dependencies": {
     "coffee-script": "latest",
     "express": "latest",
+    "mongoose": "latest"
   },
   "optionalDependencies": {},
   "engines": {

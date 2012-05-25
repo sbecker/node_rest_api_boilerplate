@@ -16,7 +16,6 @@ Run the app:
 
 ToDos:
 
-- Wire up model to send/receive data from a persistent data store (most likely Postgres)
 - Implement basic authentication
 - Test the app with Mocha
 
@@ -24,4 +23,4 @@ Libraries:
 
 - Express: Web Framework
 - CoffeeScript: Cleaner JavaScript
-
+- Mongoose: JS ORM for MongoDB
