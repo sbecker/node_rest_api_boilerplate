@@ -6,16 +6,14 @@
 mongoose = require 'mongoose'
 mongoose.connect process.env.MONGOHQ_URL || 'mongodb://localhost/node_rest_api_boilerplate_' + (process.env.NODE_ENV || "development")
 
-# Define some validation functions for use in schema
-validateIsNotBlank = (v) -> v != null && v.length > 0
 
 Widget = mongoose.model "Widget", new mongoose.Schema
   name:
     type: String
-    validate: [validateIsNotBlank, 'cannot be blank']
+    required: true
   description:
     type: String
-    validate: [validateIsNotBlank, 'cannot be blank']
+    required: true
   created_at: Date
   updated_at: Date
 
