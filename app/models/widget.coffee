@@ -3,10 +3,6 @@
 # - make sure expected attributes are set and don't get entirely removed
 # - set created_at and updated_at dates
 
-mongoose = require 'mongoose'
-mongoose.connect process.env.MONGOHQ_URL || 'mongodb://localhost/node_rest_api_boilerplate_' + (process.env.NODE_ENV || "development")
-
-
 Widget = mongoose.model "Widget", new mongoose.Schema
   name:
     type: String

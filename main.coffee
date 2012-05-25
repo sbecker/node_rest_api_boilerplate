@@ -1,3 +1,6 @@
+GLOBAL.mongoose = require 'mongoose'
+mongoose.connect process.env.MONGOHQ_URL || 'mongodb://localhost/node_rest_api_boilerplate_' + (process.env.NODE_ENV || "development")
+
 express = require 'express'
 routes  = require './config/routes'
 
